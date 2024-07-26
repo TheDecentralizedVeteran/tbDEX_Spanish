@@ -37,7 +37,6 @@
 \vspace{1\baselineskip}
 \section{Introducción}
 
-
 \vspace{1\baselineskip}
 Estamos en una encrucijada en nuestro sistema financiero. El surgimiento de redes descentralizadas y sin confianza desbloquea el potencial de un futuro en el que el comercio pueda realizarse sin el permiso, la participación o el beneficio de intermediarios financieros.
 
@@ -49,7 +48,6 @@ Un sistema financiero abierto y descentralizado permitirá a todas las personas 
 
 \vspace{1\baselineskip}
 \textit{tbDEX} se formó con el deseo de permitir que todos puedan realizar esta visión del futuro. El estado actual de Bitcoin y otros sistemas financieros descentralizados todavía está fuera del alcance de las personas comunes. Por ejemplo, obtener tu primera moneda estable generalmente implica pasar por un intercambio centralizado. Acceder a servicios financieros descentralizados luego requiere múltiples transferencias de activos y tarifas de transacción en cada paso del camino. Aparte de los guardianes y el costo, la complejidad y la absoluta ininteligibilidad de este proceso hoy en día es una barrera de entrada prohibitiva para la mayoría. Se están realizando trabajos importantes para superar los inconvenientes actuales con soluciones de capa dos, como Lightning. Pero las deficiencias persisten. Sigue siendo prohibitivamente difícil para la persona promedio, comenzando con instrumentos de pago tradicionales basados en fiat, acceder directamente a rampas de entrada y salida del sistema financiero descentralizado. Necesitamos un mejor puente hacia este futuro. El protocolo \textit{tbDEX} está dirigido a este problema.
-
 
 \vspace{1\baselineskip}
 El protocolo proporciona un marco para crear rampas de entrada y salida de sistemas de moneda fiduciaria a monedas digitales, sin la necesidad de pasar por intercambios centralizados. El protocolo permite el intercambio seguro de identidad y mecanismos que perminten a los participantes cumplir con leyes y regulaciones. 
@@ -64,19 +62,19 @@ En esencia, el protocolo \textit{tbDEX} facilita la formación de redes de confi
 {\LARGE Confianza}
 
 \vspace{1\baselineskip}
-El protocolo \textit{tbDEX} aborda la confianza de manera diferente a otros protocolos de intercambio descentralizados en el sentido de que no utiliza un modelo de \textit{sin confianza}, como los intercambios atómicos. A primera vista, esto no es óptimo, especialmente cuando se considera el objetivo final de proporcionar acceso a un activo sin confianza como bitcoin. Sin embargo, la realidad es que ninguna interfaz con el sistema monetario fiat puede ser sin confianza; los puntos finales en las vías fiat siempre estarán sujetos a regulación, y existirá el potencial para comportamientos indebidos por parte de las contrapartes. Esto significa que cualquier intercambio de valor debe basarse fundamentalmente en otros medios de gobernar la confianza \textcolor[HTML]{202124}{— }particularmente la reputación. 
+El protocolo \textit{tbDEX} aborda la confianza de manera diferente a otros protocolos de intercambio descentralizados en el sentido de que no utiliza un modelo de \textit{sin confianza}, como los intercambios atómicos. A primera vista, esto no es óptimo, especialmente cuando se considera el objetivo final de proporcionar acceso a un activo sin confianza como bitcoin. Sin embargo, la realidad es que ninguna interfaz con el sistema monetario fiduciario puede ser sin confianza; los puntos finales en los rieles fiduciario siempre estarán sujetos a regulación, y existirá el potencial para comportamientos malos por parte de las contrapartes. Esto significa que cualquier intercambio de valor debe basarse fundamentalmente en otros medios de gobernar la confianza \textcolor[HTML]{202124}{—}particularmente la reputación. 
 
 \vspace{1\baselineskip}
-El protocolo \textit{tbDEX} toma prestado en gran medida, si no completamente, de modelos bien establecidos de descentralización de la confianza, como la infraestructura de clave pública (PKI) que se utiliza para asegurar Internet hoy en día. 
+El protocolo \textit{tbDEX} toma prestado en gran medida, si no completamente, de modelos bien establecidos de confianza descentralizada, como la infraestructura de clave pública (PKI) que se utiliza para asegurar Internet hoy en día. 
 
 \vspace{1\baselineskip}
-Construyendo sobre \href{https://www.w3.org/TR/did-core}{\uline{\textcolor[HTML]{1155CC}{Identificadores Descentralizados (DID)}}} [2], esta especificación presenta un modelo de confianza en el que la confianza es gobernada a través de verificadores dispares de confianza; esto está en última instancia bajo el control de individuos, implementadores de billeteras digitales y/o delegados de confianza establecidos por cualquiera de los grupos. 
+Basándose en los \href{https://www.w3.org/TR/did-core}{\uline{\textcolor[HTML]{1155CC}{Identificadores Descentralizados (DID)}}} [2], esta especificación establece un modelo de confianza en el que la confianza se rige a través de distintos verificadores de confianza; esto está en última instancia bajo el control de individuos, implementadores de billeteras de moneda digitales y/o delegados de confianza establecidos por cualquiera de los grupos. 
 
 \vspace{1\baselineskip}
-El protocolo en sí no se basa en una federación para controlar el permiso o el acceso a la red. No hay un token de gobernanza. En su forma más abstracta, es un protocolo de mensajería extensible con la capacidad de formar relaciones de confianza distribuidas como una característica de diseño central. El protocolo en sí no tiene opinión sobre cómo debería ser una relación de confianza óptima entre una billetera individual y una institución financiera participante (PFI). 
+El protocolo en sí no depende en una federación para controlar el permiso o el acceso a la red. No hay un token de gobernanza. En su forma más abstracta, es un protocolo de mensajería extensible con la capacidad de formar relaciones de confianza distribuidas como una faceta central del diseño. El protocolo en sí no tiene opinión sobre cómo debería ser una relación de confianza óptima entre una billetera individual y una institución financiera participante (PFI). 
 
 \vspace{1\baselineskip}
-La naturaleza de esta relación de confianza nunca será universal: diferentes jurisdicciones están sujetas a diferentes leyes y regulaciones; y diferentes individuos e instituciones tendrán diferentes niveles de tolerancia al riesgo, influenciados por el precio y otros incentivos. Violentaría el principio de intentar lograr la mayor cantidad de descentralización si la negociación de confianza se dictara en la capa del protocolo, ya que eso necesariamente involucraría alguna forma de federación con permiso. 
+La naturaleza de esta relación de confianza nunca será universal: diferentes jurisdicciones están sujetas a diferentes leyes y regulaciones; y diferentes individuos e instituciones tendrán diferentes niveles de tolerancia al riesgo, influenciados por el precio y otros incentivos. Violaría el principio de intentar lograr la máxima cantidad de descentralización si la negociación de la confianza se dictara en la capa del protocolo, ya que eso necesariamente implicaría alguna forma de federación autorizada. 
 
 {\LARGE  \\ Identificadores Descentralizados (DIDs)}
 
