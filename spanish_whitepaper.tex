@@ -249,12 +249,12 @@ Los siguientes son precondiciones necesarias para los flujos de protocolo descri
 
 \vspace{1\baselineskip}
 \end{itemize}
-A continuación se presentan ejemplos de escenarios de rampa de entrada (fiat $\rightarrow$ moneda digital) y rampa de salida (moneda digital $\rightarrow$ fiat), usando a Alice como un marcador de posición para representar a cualquier individuo que utilice el protocolo. Para el propósito de este ejemplo, utilizaremos USD, aunque el protocolo no se limita solo a USD.
+A continuación se muestran ejemplos de escenarios de rampa de entrada (moneda fiduciaria $\rightarrow$ moneda digital) y rampa de salida (moneda digital $\rightarrow$ moneda fiduciaria), usando a Alice como un marcador de posición para representar a cualquier individuo que utilice el protocolo. Para el propósito de este ejemplo, utilizaremos USD, aunque el protocolo no se limita solo a USD.
 
 \subsubsection{Ejemplo de Rampa de Entrada}
 
 \begin{itemize}
-	\item La billetera de Alice resuelve y almacena el conjunto actual de claves y puntos de enlace DWN para los DIDs de las PFIs conocidas y descubiertas. Esta es una actividad periódica que la billetera repite según sea necesario.
+	\item La billetera de Alice resuelve y almacena en caché el conjunto actual de claves y puntos de enlace DWN para los DIDs de las PFIs conocidas y descubiertas. Esta es una actividad periódica que la billetera repite según sea necesario.
 
 	\item A través de la interfaz de usuario de la billetera, Alice inicia un flujo para solicitar moneda digital \textit{XYZ} a cambio de 100.00 USD.
 
@@ -262,19 +262,19 @@ A continuación se presentan ejemplos de escenarios de rampa de entrada (fiat $\
 
 	\item La billetera envía el mensaje \textit{ASK} a los Nodos Web Descentralizados de cada PFI que desea incluir como contraparte potencial de cumplimiento.
 
-	\item Una PFI interesada responde al \textit{ASK} que recibe con una lista de \textit{BID}s.\textit{ Nota: La PFI tiene la libertad de elegir qué tipos de credenciales requiere para un BID dado, y es posible que la PFI ofrezca un BID sin requisitos de credenciales. Dado que cada VC adicional presumiblemente reduce el riesgo asumido por la PFI, es probable que las PFIs proporcionen mejores tasas o velocidades para BIDs con niveles más altos de requisitos de credenciales. }
+	\item Una PFI interesada responde al \textit{ASK} que recibe con una lista de \textit{BID}s.\textit{ Nota: La PFI tiene la libertad de elegir qué tipos de credenciales requiere para un BID dado, y es posible que la PFI ofrezca un BID sin requisitos de credenciales. Dado que cada VC adicional presumiblemente reduce el riesgo asumido por la PFI, es probable que las PFIs proporcionen mejores tasas o velocidades para BIDs con niveles más altos de requisitos de credenciales.}
 
 	\item Alice elige uno de los BIDs respondiendo con el hash firmado original de ese \textit{BID}, junto con una presentación de las credenciales requeridas por ese \textit{BID}.
 
-	\item La PFI verifica la presentación de Alice junto con las credenciales dentro de esa presentación y, si todo está en orden, envía un \textit{BID} final a Alice.
+	\item El PFI verifica la presentación de Alice junto con las credenciales dentro de esa presentación y, si todo está en orden, envía un \textit{BID} final a Alice.
 
 	\item Alice acepta el \textit{BID} firmándolo y enviándolo de vuelta a la PFI.
 
-	\item La PFI publica un contrato inteligente en una blockchain y lo financia (para establecer prueba de capacidad de liquidación) con la cantidad acordada de moneda digital \textit{XYZ} y envía la dirección de la transacción a Alice.
+	\item El PFI publica un contrato inteligente en una blockchain y lo financia (para establecer prueba de capacidad de liquidación) con la cantidad acordada de moneda digital \textit{XYZ} y envía la dirección de la transacción a Alice.
 
-	\item La billetera de Alice consulta el contrato para asegurar que la cantidad acordada esté presente. Luego, la billetera de Alice obtiene el medio de pago fiat aceptado desde el hub de la PFI. (El medio de pago fiat se expondrá como servicios individuales.) Alice selecciona su medio de pago preferido de los disponibles. La billetera de Alice facilita el pago a través del servicio asociado con el medio de pago seleccionado.
+	\item La billetera de Alice consulta el contrato para asegurar que la cantidad acordada esté presente. Luego, la billetera de Alice obtiene el medio de pago fiduciario aceptado desde el centro de la PFI. (El medio de pago fiduciario se expondrá como servicios individuales.) Alice selecciona su medio de pago preferido de los disponibles. La billetera de Alice facilita el pago a través del servicio asociado con el medio de pago seleccionado.
 
-	\item Una vez que la PFI está satisfecha con el estado del pago fiat (esto puede ser cuando el pago se liquide, o puede ser antes si la PFI decide asumir más riesgo), ejecutan el contrato inteligente para liberar la moneda digital a la dirección de la billetera de Alice.
+	\item Una vez que el PFI está satisfecha con el estado del pago fiduciario (esto puede ser cuando el pago se liquide, o puede ser antes si el PFI decide asumir más riesgo), ejecutan el contrato inteligente para liberar la moneda digital a la dirección de la billetera de Alice.
 
 \vspace{1\baselineskip}
 \end{itemize}
