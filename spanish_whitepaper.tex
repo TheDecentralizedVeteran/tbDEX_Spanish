@@ -203,20 +203,20 @@ El protocolo de mensajería principal se divide en varias capas de comunicación
 Los mensajes intercambiados entre los propietarios de billeteras y las PFIs que se transmiten entre los Nodos Web Descentralizados de los participantes contienen objetos definidos semánticamente adheridos a esquemas estándar. Estos objetos de mensaje definen todos los caminos del flujo ASK / BID / Liquidación y contienen los datos necesarios para que las contrapartes evalúen solicitudes, verifiquen credenciales y ejecuten intercambios de valor.
 
 \vspace{1\baselineskip}
-Los mensajes son objetos JSON, firmados por la parte que envía a la parte receptora para cada etapa de un intercambio, y pueden ser cifrados dependiendo del flujo o contenido que contienen. Existen hooks que permiten a un servicio de manejo de mensajes recibir los mensajes a medida que llegan a un DWN y procesarlos de acuerdo con la semántica y el conjunto de reglas que el protocolo define para un tipo de mensaje dado.
+Los mensajes son objetos JSON, firmados por la parte que envía a la parte receptora para cada etapa de un intercambio, y pueden ser cifrados dependiendo del flujo o contenido que contienen. Existen ganchose que permiten a un servicio de manejo de mensajes recibir los mensajes a medida que llegan a un DWN y procesarlos de acuerdo con la semántica y el conjunto de reglas que el protocolo define para un tipo de mensaje dado.
 
 \vspace{1\baselineskip}
 \subsection{Descubrimiento de PFIs}
 
 \vspace{1\baselineskip}
-Para que las billeteras inicien y realicen intercambios de valor con PFIs, deben estar al tanto de los DIDs de las PFIs que desean incluir en su grupo de contrapartes potenciales. La conciencia de los DIDs de las PFIs permite a las billeteras resolver el conjunto actual de claves y los puntos de enlace DWN asociados con un DID dado. Imaginamos varios medios para obtener conocimiento de los DIDs de las PFIs:
+Para que las billeteras inicien y realicen intercambios de valor con PFIs, deben estar al tanto de los DIDs de las PFIs que desean incluir en su grupo de contrapartes potenciales. La conciencia de los DIDs de las PFIs permite a las billeteras resolver el conjunto de claves actual y los puntos finales de enrutamiento de DWN asociados con un DID dado. Prevemos varios medios para obtener conocimiento de los DID de las PFIs:
 
 \vspace{1\baselineskip}
 {\Large \textcolor[HTML]{434343}{Listas Curadas Individualmente}}
 
 Los individuos pueden incluir cualquier entidad que deseen en sus listas de contrapartes deseadas. Las billeteras deben exponer funcionalidades e interfaces de usuario que faciliten este proceso de manera simple y comprensible para sus consumidores.
 
-\paragraph{Listas Armadas por el Proveedor}
+\paragraph{Listas Creadas por el Proveedor}
 
 La forma más básica de inclusión de PFIs en el grupo de contrapartes potenciales de una billetera es la compilación de una lista de DIDs de PFIs por parte del proveedor de la billetera. Los proveedores de billeteras evaluarán los DIDs de las PFIs para su inclusión en sus listas basándose en sus propios criterios, que pueden incluir una combinación de procesos programáticos y humanos, como la inspección de VCs o procedimientos de verificación más tradicionales entre empresas.
 
