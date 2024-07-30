@@ -16,10 +16,9 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3.8.0  # Updated to a newer version
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
-          allow_empty_commit: true
-          force_orphan: true
+      - - name: Deploy
+          uses: peaceiris/actions-gh-pages@v4
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./public
+            force_orphan: true
