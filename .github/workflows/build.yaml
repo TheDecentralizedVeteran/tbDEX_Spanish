@@ -1,24 +1,35 @@
-name: build
+name: Build PDF
 
 on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
   push:
     branches:
-      - main
+      - main  # Trigger on push to the 'main' branch
 
 jobs:
-  build-site:
+  build-pdf:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3  # Updated to the latest version
+      - name: Checkout Code
+        uses: actions/checkout@v3  # Use the latest version
         with:
           persist-credentials: false
 
-      - - name: Deploy
-          uses: peaceiris/actions-gh-pages@v4
-          with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            publish_dir: ./public
-            force_orphan: true
+      - name: Install LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive texlive-latex-extra texlive-fonts-recommended
+
+      - name: Build PDF
+        run: |
+          pdflatex spanish_whitepaper.tex  # Replace 'yourfile.tex' with the name of your .tex file
+          pdflatex spanish_whitepaper.tex  # Run twice to ensure references and table of contents are updated
+
+      - name: Deploy PDF
+        uses: peaceiris/actions-gh-pages@v3.8.0  # Use the latest version for deployment
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./ # Directory containing the generated PDF
+          allow_empty_commit: true
+          force_orphan: true
