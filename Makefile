@@ -1,6 +1,6 @@
 .PHONY: all build buildpdf biber clean mermaid
 
-BASENAME="whitepaper"
+BASENAME="spanish_whitepaper"
 
 pdf pdf2:
 	echo "----------- Building pdf"
