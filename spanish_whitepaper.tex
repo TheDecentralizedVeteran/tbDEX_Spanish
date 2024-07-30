@@ -50,7 +50,7 @@ Un sistema financiero abierto y descentralizado permitirá a todas las personas 
 \textit{tbDEX} se formó con el deseo de permitir que todos puedan realizar esta visión del futuro. El estado actual de Bitcoin y otros sistemas financieros descentralizados todavía está fuera del alcance de las personas comunes. Por ejemplo, obtener tu primera moneda estable generalmente implica pasar por un intercambio centralizado. Acceder a servicios financieros descentralizados luego requiere múltiples transferencias de activos y tarifas de transacción en cada paso del camino. Aparte de los guardianes y el costo, la complejidad y la absoluta ininteligibilidad de este proceso hoy en día es una barrera de entrada prohibitiva para la mayoría. Se están realizando trabajos importantes para superar los inconvenientes actuales con soluciones de capa dos, como Lightning. Pero las deficiencias persisten. Sigue siendo prohibitivamente difícil para la persona promedio, comenzando con instrumentos de pago tradicionales basados en fiat, acceder directamente a rampas de entrada y salida del sistema financiero descentralizado. Necesitamos un mejor puente hacia este futuro. El protocolo \textit{tbDEX} está dirigido a este problema.
 
 \vspace{1\baselineskip}
-El protocolo proporciona un marco para crear rampas de entrada y salida de sistemas de moneda fiduciaria a monedas digitales, sin la necesidad de pasar por intercambios centralizados. El protocolo permite el intercambio seguro de identidad y mecanismos que perminten a los participantes cumplir con leyes y regulaciones. 
+El protocolo proporciona un marco para crear rampas de entrada y salida de sistemas de moneda fiduciario a monedas digitales, sin la necesidad de pasar por intercambios centralizados. El protocolo permite el intercambio seguro de identidad y mecanismos que perminten a los participantes cumplir con leyes y regulaciones. 
 
 \vspace{1\baselineskip}
 En esencia, el protocolo \textit{tbDEX} facilita la formación de redes de confianza mutua entre contrapartes que no están controladas centralmente; permite a los participantes negociar la confianza directamente entre sí (o confiar en terceros mutuamente confiables para respaldar a las contrapartes) y fijar el precio de sus intercambios para tener en cuenta el riesgo percibido y los requisitos específicos. 
@@ -154,7 +154,7 @@ Las billeteras actúan como agentes para individuos o instituciones facilitando 
 
 \vspace{1\baselineskip}
 \end{itemize}
-Las billeteras desarrolladas utilizando el protocolo \textit{tbDEX} simplifican significativamente la experiencia del usuario para sus clientes que buscan mover activos entre monedas fiduciarias y digitales. Los individuos o las organizaciones ya no tendrían que primero registrarse a través de un intercambio centralizado separado para adquirir activos digitales con instrumentos de pago fiduciarios, antes de transferir esos activos de moneda digital a las billeteras. Los individuos o las organizaciones también pueden utilizar el protocolo para volver fácilmente a las monedas fiduciarias.
+Las billeteras desarrolladas utilizando el protocolo \textit{tbDEX} simplifican significativamente la experiencia del usuario para sus clientes que buscan mover activos entre monedas fiduciarios y digitales. Los individuos o las organizaciones ya no tendrían que primero registrarse a través de un intercambio centralizado separado para adquirir activos digitales con instrumentos de pago fiduciarios, antes de transferir esos activos de moneda digital a las billeteras. Los individuos o las organizaciones también pueden utilizar el protocolo para volver fácilmente a las monedas fiduciarios.
 
 \vspace{1\baselineskip}
 El protocolo permite que las billeteras proporcionen una experiencia optimizada para el cliente con rampas de entrada y salida directas entre los mundos financieros tradicionales y descentralizados. Esto significa que los clientes pueden usar billeteras de autocustodia sin tener que renunciar a la comodidad a cambio de seguridad o opciones autohospedadas.
@@ -174,16 +174,16 @@ El protocolo \textit{tbDEX} no impone requisitos específicos sobre las implemen
 \subsection{Instituciones Financieras Participantes (PFIs)}
 
 \vspace{1\baselineskip}
-Las Instituciones Financieras Participantes (PFIs) son entidades que ofrecen servicios de liquidez en la red \textit{tbDEX}. \textit{tbDEX} es sin permiso, lo que significa que cualquier PFI puede ejecutar un nodo en la red sin la aprobación de terceros, ya sea individuos, federaciones u organizaciones. Cada PFI será identificada a través de DIDs y VCs. Las PFIs pueden ser, pero no se limitan a, empresas de tecnología financiera, bancos regionales, grandes bancos institucionales u otras instituciones financieras; las PFIs tienen acceso a sistemas de pago fiduciario y la capacidad de facilitar pagos fiduciario a cambio de activos de moneda digital o viceversa. En teoría, una PFI podría aceptar o producir efectivo o cheques como un mecanismo para efectuar la liquidación fiduciaria. Sin embargo, para los fines de este documento asumimos que las transacciones fiduciarias se realizan a través de pagos digitales en línea.
+Las Instituciones Financieras Participantes (PFIs) son entidades que ofrecen servicios de liquidez en la red \textit{tbDEX}. \textit{tbDEX} es sin permiso, lo que significa que cualquier PFI puede ejecutar un nodo en la red sin la aprobación de terceros, ya sea individuos, federaciones u organizaciones. Cada PFI será identificada a través de DIDs y VCs. Las PFIs pueden ser, pero no se limitan a, empresas de tecnología financiera, bancos regionales, grandes bancos institucionales u otras instituciones financieras; las PFIs tienen acceso a sistemas de pago fiduciario y la capacidad de facilitar pagos fiduciario a cambio de activos de moneda digital o viceversa. En teoría, una PFI podría aceptar o producir efectivo o cheques como un mecanismo para efectuar la liquidación fiduciario. Sin embargo, para los fines de este documento asumimos que las transacciones fiduciarios se realizan a través de pagos digitales en línea.
 
 \vspace{1\baselineskip}
-Aunque las PFIs pueden estar sujetas a diferentes reglas y regulaciones para los pagos en moneda fiduciaria, dependiendo de su jurisdicción específica, es probable que necesiten recopilar cierta información de identificación personal (PII) de los propietarios de las billeteras para cumplir con los requisitos regulatorios, como satisfacer programas de prevención de lavado de dinero (AML), contrarrestar la financiación del terrorismo y no violar sanciones. El protocolo \textit{tbDEX} no incluye ninguna PII en el ASK en sí, solo información sobre el tipo de PII que se proporcionará si la PFI decide aceptar el ASK y la billetera se compromete a proporcionar la información necesaria.
+Aunque las PFIs pueden estar sujetas a diferentes reglas y regulaciones para los pagos en moneda fiduciario, dependiendo de su jurisdicción específica, es probable que necesiten recopilar cierta información de identificación personal (PII) de los propietarios de las billeteras para cumplir con los requisitos regulatorios, como satisfacer programas de prevención de lavado de dinero (AML), contrarrestar la financiación del terrorismo y no violar sanciones. El protocolo \textit{tbDEX} no incluye ninguna PII en el ASK en sí, solo información sobre el tipo de PII que se proporcionará si la PFI decide aceptar el ASK y la billetera se compromete a proporcionar la información necesaria.
 
 \vspace{1\baselineskip}
 Cuando una PFI recibe un ASK de una billetera, decidirá si desea ofrecer una oferta en función de los detalles del ASK. Las PFIs no están obligadas a admitir todos los esquemas y solicitudes posibles. Por ejemplo, algunas PFIs pueden aceptar tarjetas de crédito mientras que otras no. El protocolo \textit{tbDEX} puede llevar información que permite a las PFIs decidir si buscan ofertar por el negocio de la billetera, y de ser así, qué VCs solicitar a las billeteras. El protocolo también llevará la información de cumplimiento regulatorio requerida por las PFIs para realizar sus verificaciones AML y KYC antes de proporcionar liquidez al propietario de la billetera. Sin embargo, la información necesaria puede variar según la jurisdicción.
 
 \vspace{1\baselineskip}
-Para participar en la red, las PFIs ejecutarán nodos que faciliten la recepción de ASKs y la transmisión de BIDs. Conceptualmente, los nodos PFI son similares a las billeteras y se basarán en los mismos módulos y bibliotecas subyacentes. El protocolo \textit{tbDEX} no ejecuta transacciones de moneda fiduciaria o digital. Esto lo proporciona la PFI y se hace descubrible a través del DID de la PFI.
+Para participar en la red, las PFIs ejecutarán nodos que faciliten la recepción de ASKs y la transmisión de BIDs. Conceptualmente, los nodos PFI son similares a las billeteras y se basarán en los mismos módulos y bibliotecas subyacentes. El protocolo \textit{tbDEX} no ejecuta transacciones de moneda fiduciario o digital. Esto lo proporciona la PFI y se hace descubrible a través del DID de la PFI.
 
 \vspace{1\baselineskip}
 \section{Protocolo}
@@ -249,7 +249,7 @@ Los siguientes son precondiciones necesarias para los flujos de protocolo descri
 
 \vspace{1\baselineskip}
 \end{itemize}
-A continuación se muestran ejemplos de escenarios de rampa de entrada (moneda fiduciaria $\rightarrow$ moneda digital) y rampa de salida (moneda digital $\rightarrow$ moneda fiduciaria), usando a Alice como un marcador de posición para representar a cualquier individuo que utilice el protocolo. Para el propósito de este ejemplo, utilizaremos USD, aunque el protocolo no se limita solo a USD.
+A continuación se muestran ejemplos de escenarios de rampa de entrada (moneda fiduciario $\rightarrow$ moneda digital) y rampa de salida (moneda digital $\rightarrow$ moneda fiduciario), usando a Alice como un marcador de posición para representar a cualquier individuo que utilice el protocolo. Para el propósito de este ejemplo, utilizaremos USD, aunque el protocolo no se limita solo a USD.
 
 \subsubsection{Ejemplo de Rampa de Entrada}
 
@@ -290,12 +290,12 @@ A continuación se muestran ejemplos de escenarios de rampa de entrada (moneda f
 \includegraphics[width=16.4cm,height=15.3cm]{./diagrams/on-ramp.png}
 \end{figure}
 
-\subsubsection{Ejemplo de Salida}
+\subsubsection{Ejemplo de Rampa de Salida}
 
 \begin{enumerate}
 	\item La billetera de Alice resuelve y almacena en caché el conjunto actual de claves y puntos finales DWN para los DIDs de los PFIs conocidos y descubiertos. Esta es una actividad periódica que la billetera repite según sea necesario.
 
-	\item A través de la interfaz de usuario de la billetera, Alice inicia un flujo para solicitar moneda fiduciaria (en este caso USD) a cambio de 100 unidades de la moneda digital \textit{XYZ}.
+	\item A través de la interfaz de usuario de la billetera, Alice inicia un flujo para solicitar moneda fiduciario (en este caso USD) a cambio de 100 unidades de la moneda digital \textit{XYZ}.
 
 	\item La billetera de Alice genera un mensaje semántico que refleja un \textit{ASK}, codificado con los parámetros de la solicitud de Alice.  
 
@@ -313,14 +313,14 @@ A continuación se muestran ejemplos de escenarios de rampa de entrada (moneda f
 
 	\item El PFI consulta el contrato inteligente para asegurar que la cantidad acordada de \textit{XYZ} esté presente y luego inicia una transacción para retirar los fondos a su billetera.
 
-	\item El PFI envía la cantidad acordada de moneda fiduciaria al destino proporcionado por Alice.
+	\item El PFI envía la cantidad acordada de moneda fiduciario al destino proporcionado por Alice.
 
 \vspace{1\baselineskip}
 \end{enumerate}
-Una motivación para introducir un contrato inteligente es permitir que la moneda digital mantenida en el contrato inteligente se libere automáticamente de nuevo a Alice después de que haya transcurrido un cierto tiempo, en caso de que el PFI se desconecte y no cumpla con sus obligaciones.
+Una de las motivaciones detrás de la introducción de un contrato inteligente es permitir que la moneda digital mantenida en el contrato inteligente se libere automáticamente de nuevo a Alice después de que haya transcurrido un cierto tiempo, en caso de que el PFI se desconecte y no cumpla con sus obligaciones.
 
 \vspace{1\baselineskip}
-El intercambio de valor real en los dos últimos pasos del ejemplo de salida pone más riesgo en Alice, ya que el PFI puede retirar la moneda digital de Alice antes de iniciar un envío de moneda fiduciaria al destino proporcionado por Alice. \textcolor[HTML]{202124}{Idealmente, habría una forma de garantizar que el PFI enviará la moneda fiduciaria antes de recibir la moneda digital.} En implementaciones futuras, los PFIs y las billeteras pueden confiar en servicios de monitoreo bancario y actuar como oráculos dentro del contrato inteligente para monitorear la cuenta bancaria del individuo y activar la liberación de fondos en moneda digital al PFI solo \textit{después} de que vean que se ha iniciado el envío de moneda fiduciaria\textcolor[HTML]{3C4043}{.}
+El intercambio de valor real en los dos últimos pasos del ejemplo de salida pone más riesgo en Alice, ya que el PFI puede retirar la moneda digital de Alice antes de iniciar un envío de moneda fiduciario al destino proporcionado por Alice. \textcolor[HTML]{202124}{Idealmente, habría una forma de garantizar que el PFI enviará la moneda fiduciario antes de recibir la moneda digital.} En implementaciones futuras, los PFIs y las billeteras pueden confiar en servicios de monitoreo bancario y actuar como oráculos dentro del contrato inteligente para monitorear la cuenta bancaria del individuo y activar la liberación de fondos en moneda digital al PFI solo \textit{después} de que vean que se ha iniciado el envío de moneda fiduciario\textcolor[HTML]{3C4043}{.}
 
 \vspace{9\baselineskip}
 \begin{center}
@@ -344,7 +344,7 @@ El DID asociado con el propietario de la billetera (ya sea un individuo o una in
 
 \subparagraph{Tipo de Activo Deseado}
 
-El tipo de activo solicitado (por ejemplo, TOKEN-USDC, TOKEN-BTC, TOKEN-MMXN, FIAT-USD, FIAT-EUR, etc.), donde los activos precedidos por TOKEN son activos de moneda digital, y los activos precedidos por FIAT son monedas fiduciarias.\textit{ }
+El tipo de activo solicitado (por ejemplo, TOKEN-USDC, TOKEN-BTC, TOKEN-MMXN, FIAT-USD, FIAT-EUR, etc.), donde los activos precedidos por TOKEN son activos de moneda digital, y los activos precedidos por FIAT son monedas fiduciarios.\textit{ }
 
 \subparagraph{Cantidad de Activo Deseada}
 
@@ -352,7 +352,7 @@ La cantidad de activos deseados solicitados. Esto puede estar vacío si se desea
 
 \subparagraph{Esquema de Liquidación Deseado}
 
-El mecanismo mediante el cual se solicita la liquidación. Esto permitirá a una billetera especificar qué blockchain o protocolo utilizar para efectuar la liquidación. Por ejemplo, muchos stablecoins existen en múltiples blockchains, y bitcoin se puede liquidar en soluciones de capa dos como Lightning. Para las monedas fiduciarias, los protocolos de liquidación podrían incluir mecanismos como SEPA, ACH, Tarjetas de Pago, SWIFT, entre otros.
+El mecanismo mediante el cual se solicita la liquidación. Esto permitirá a una billetera especificar qué blockchain o protocolo utilizar para efectuar la liquidación. Por ejemplo, muchos stablecoins existen en múltiples blockchains, y bitcoin se puede liquidar en soluciones de capa dos como Lightning. Para las monedas fiduciarios, los protocolos de liquidación podrían incluir mecanismos como SEPA, ACH, Tarjetas de Pago, SWIFT, entre otros.
 
 \subparagraph{Tipo de Activo Ofrecido}
 
@@ -442,7 +442,7 @@ Mientras que esta es la razón por la cual los bancos y otras instituciones fina
 
 \subsubsection{Phishing}
 
-Un posible ataque serio que podría llevarse a cabo contra las billeteras sería un nodo PFI que se haga pasar por un nodo legítimo de entrada y salida fiduciaria, con la intención de capturar información personal identificable (PII) o credenciales financieras con el propósito de obtener información de manera ilegítima para el robo de identidad o financiero. La primera línea de defensa contra estos tipos de ataques depende en gran medida de la verificación de confianza a través de VCs compartidos mutuamente. Por lo tanto, las implementaciones de billeteras y los operadores de billeteras serían altamente recomendados a emplear listas de nodos PFI confiables que puedan ser verificadas de manera independiente. En ausencia de esto, se alentaría al operador de la billetera a realizar una investigación y verificación independiente de la confiabilidad de la contraparte antes de comprometerse a transmitir información sensible.
+Un posible ataque serio que podría llevarse a cabo contra las billeteras sería un nodo PFI que se haga pasar por un nodo legítimo de entrada y salida fiduciario, con la intención de capturar información personal identificable (PII) o credenciales financieras con el propósito de obtener información de manera ilegítima para el robo de identidad o financiero. La primera línea de defensa contra estos tipos de ataques depende en gran medida de la verificación de confianza a través de VCs compartidos mutuamente. Por lo tanto, las implementaciones de billeteras y los operadores de billeteras serían altamente recomendados a emplear listas de nodos PFI confiables que puedan ser verificadas de manera independiente. En ausencia de esto, se alentaría al operador de la billetera a realizar una investigación y verificación independiente de la confiabilidad de la contraparte antes de comprometerse a transmitir información sensible.
 
 \subsubsection{Incumplimiento de Liquidación / No Entrega de Fondos}
 
@@ -458,7 +458,7 @@ El documento de Bitcoin [5] delineó una visión para una moneda digital nativa 
 Cuando el ámbito digital interactúa con el ámbito físico, las garantías sin confianza no cruzan la división. Aunque es cierto que, por ejemplo, una transacción de bitcoin entre billeteras no requiere un tercero confiable o intermediario, también es cierto que en los pagos por bienes y servicios, el riesgo de contraparte sigue existiendo. Con bitcoin, el beneficiario puede recibir fondos sin la posibilidad de que el pagador incumpla su obligación financiera, pero el beneficiario aún puede incumplir la transacción mediante la no entrega de bienes o servicios. Un par físico de calcetines no puede intercambiarse atómicamente con bitcoin en un DEX. De hecho, es imposible e irrazonable esperar que tal transacción pueda llevarse a cabo puramente de forma anónima, sin que las contrapartes tengan alguna relación de confianza externa. En el caso promedio, el beneficiario necesita una dirección de envío física, mientras que el pagador buscaría alguna señal para confiar en que el beneficiario es un negocio legítimo.
 
 \vspace{1\baselineskip}
-El intercambio de moneda fiduciaria y digital sufre del mismo problema. ¿Se puede confiar en la contraparte para entregar moneda fiduciaria a cambio de moneda digital? ¿Cuáles son las consecuencias si no lo hacen?
+El intercambio de moneda fiduciario y digital sufre del mismo problema. ¿Se puede confiar en la contraparte para entregar moneda fiduciario a cambio de moneda digital? ¿Cuáles son las consecuencias si no lo hacen?
 
 \vspace{1\baselineskip}
 El protocolo \textit{tbDEX} busca utilizar sistemas de identidad descentralizada con VCs para crear mercados de confianza, a través de terceros mutuamente elegidos. Esto puede percibirse como un intento de socavar el anonimato o ``desanonimizar" las transacciones. Pero también debemos reconocer que, por las razones mencionadas anteriormente, el anonimato para transacciones de bienes y servicios tiene un costo: riesgo de contraparte sin límites.
